@@ -1,0 +1,150 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4{
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 2%;
+    margin: 1%;
+}
+
+li {
+    display: inline;
+    margin-right: 1%;
+    font-size: 1.5rem;
+}
+
+li img{
+    width: 3rem;
+}
+
+#header{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    height: 700px;
+}
+
+#title{
+    padding-top: 10%;
+    margin-left: 1%;
+    width: 50%;
+}
+
+div h1{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    width: 90%;
+}
+
+#circle{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #d9415c;
+    position: relative;
+    left: 88%;
+    top: 25%;
+}
+
+div div p{
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 30%;
+    font-size: 1.5rem;
+}
+
+main{
+    text-align: center;
+}
+
+h2{
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-size: 2.5rem;
+}
+
+#flex{
+    display: flex;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+#flex article{
+    flex: 1 23%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+article div{
+    height: 10rem;
+}
+
+#flex article img{
+    height: 80%;
+}
+
+article p{
+    width: 85%;
+}
+
+/* Interact section */
+#interact
+{
+    display: flex;
+    background-color: #f4f4f4;
+    height: 500px;
+}
+
+#image
+{
+    flex: 1 50%;
+    /*float: left;*/
+    /*width:45%;*/
+    /*height: 500px;*/
+    background-image: url("../images/interact.jpg");
+    background-position: right;
+    background-size:cover;
+
+}
+
+#interact article
+{
+    flex: 1 45%;
+    /*float: left;*/
+    padding-top:10%;
+    text-align: left;
+    margin-left: 5%;
+    /*width: 45%;*/
+}
+
+
+/* Command section */
+
+
+#commandSection article {
+    float: left;
+    width: 45%;
+
+}
+
+
+
+#command{
+    float: left;
+
+    height: 500px;
+    background-image: url("../images/commands.jpg");
+    background-position: right;
+    background-size:cover;
+
+}
+
