@@ -17,14 +17,24 @@ ul{
     margin: 1%;
 }
 
-li {
-    display: inline;
-    margin-right: 1%;
-    font-size: 1.5rem;
+#current{
+    font-weight: bold;
+    border-bottom: solid orange;
 }
 
 li img{
     width: 3rem;
+}
+
+li {
+    display: inline;
+    margin-right: 1.5%;
+    font-size: 1.5rem;
+}
+
+li a{
+    text-decoration: none;
+    color: #000;
 }
 
 #header{
@@ -34,7 +44,7 @@ li img{
 }
 
 #title{
-    padding-top: 10%;
+    padding-top: 5%;
     margin-left: 1%;
     width: 50%;
 }
@@ -53,7 +63,12 @@ div h1{
     background-color: #d9415c;
     position: relative;
     left: 88%;
-    top: 20%;
+    top: 25%;
+}
+
+#header #circle{
+    left: 88%;
+    top: 33.5%;
 }
 
 div div p{
@@ -135,10 +150,11 @@ main section{
 }
 
 #commandSection article {
-    flex: 1 45%;
-    padding-top:10%;
+    flex: 1 40%;
+    padding-top: 10%;
     text-align: left;
     margin-left: 5%;
+    margin-right: 5%;
 }
 
 #command{
@@ -149,6 +165,11 @@ main section{
     background-position: center;
     background-size:cover;
 
+}
+
+footer p{
+    font-size: 11px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -162,8 +183,47 @@ main section{
         width: 100% !important;
     }
 
-    section, #flex{
+    #header #circle{
+        left: 30% !important;
+    }
+
+    #flex{
         display: block !important;
+    }
+
+    main section{
+        flex-direction: column;
+    }
+    section div, section article{
+        flex: 1 100% !important;
+    }
+
+    section article{
+        text-align: center !important;
+        margin-left: 0 !important;
+        margin-bottom: 10%;
+        margin-right: 0 !important;
+    }
+
+    section article p{
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #commandSection article{
+        order: 1;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    ul{
+        margin-bottom: 3%;
+    }
+
+    #circle{
+        left: 79% !important;
+        top: 22% !important;
     }
 }
 
@@ -174,6 +234,11 @@ main section{
     background-size: cover;
     height: 500px;
     background-position: right;
+}
+
+#headerhowto #title{
+    padding-top: 8%;
+    margin-left: 6%;
 }
 
 #headerhowto h1{
@@ -188,7 +253,7 @@ main section{
     height: 300px;
     padding-left: 20%;
     padding-right: 20%;
-    padding-top: 3%;
+    padding-top: 4%;
     padding-bottom: 3%;
 }
 
@@ -198,11 +263,63 @@ main section{
 }
 
 #voice div img, #apps div img, #yeloplay div img{
-    height: 80%;
+    height: 100%;
 }
 
 #voice article, #apps article, #yeloplay article{
     flex: 1 50%;
     text-align: left;
     margin-top: 2%;
+    padding-top:8%;
+}
+
+@media only screen and (max-width: 600px) {
+    #headerhowto{
+        background-position: center;
+    }
+
+    #headerhowto #title{
+        margin: 0;
+    }
+
+    #headerhowto h1{
+        font-size: 3rem !important;
+    }
+
+    header #headerhowto #circle{
+        left: 31% !important;
+        top: 5% !important;
+    }
+
+
+    #voice div img, #apps div img, #yeloplay div img {
+        width: 30%;
+        height: auto;
+    }
+
+    #apps article{
+        order: 1;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #headerhowto h1{
+        color: white !important;
+        text-shadow: 2px 2px 33px #000000 !important;
+    }
+
+    #headerhowto #circle{
+        left: 79% !important;
+        top: -1% !important;
+    }
+
+    #voice, #apps, #yeloplay{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #voice article, #apps article, #yeloplay article{
+        margin-top: 2%;
+        margin-left: 10%;
+    }
 }
