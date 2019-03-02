@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 body {
     font-family: "Arial", sans-serif;
     margin: 0;
@@ -5,7 +7,7 @@ body {
 }
 
 h1, h2, h3, h4{
-    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-family: "Nunito", sans-serif;
     margin: 0;
 }
 
@@ -28,7 +30,7 @@ li img{
 #header{
     background-image: url(../images/background.jpg);
     background-size: cover;
-    height: 700px;
+    height: 500px;
 }
 
 #title{
@@ -51,7 +53,7 @@ div h1{
     background-color: #d9415c;
     position: relative;
     left: 88%;
-    top: 25%;
+    top: 20%;
 }
 
 div div p{
@@ -94,6 +96,10 @@ article div{
 
 section article p{
     width: 85%;
+}
+
+main section{
+    display: flex;
 }
 
 /* Interact section */
@@ -159,6 +165,44 @@ section article p{
     section, #flex{
         display: block !important;
     }
+}
 
+/*HOW TO page*/
 
+#headerhowto{
+    background-image: url(../images/popcorn.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: right;
+}
+
+#headerhowto h1{
+    color: #575756;
+}
+
+#apps{
+    background-color: #f4f4f4;
+}
+
+#voice, #apps, #yeloplay{
+    height: 300px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#voice div, #apps div, #yeloplay div{
+    flex: 1 50%;
+    background-image: none;
+}
+
+#voice div img, #apps div img, #yeloplay div img{
+    height: 80%;
+}
+
+#voice article, #apps article, #yeloplay article{
+    flex: 1 50%;
+    text-align: left;
+    margin-top: 2%;
 }
